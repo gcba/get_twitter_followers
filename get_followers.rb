@@ -50,11 +50,9 @@ CSV.open("followers.csv", "w") do |csv|
   followers = get_followers_info(client)
   total = followers.count
   followers.each_with_index do |user, index|
-    sleep 2
     print "\r#{index}/#{total} completo"
  
-    user_friend_ids = get_friend_ids(client, user.id)
-    csv << [user.id, user.name, user.description, user.location, user.uri.to_s, user_friend_ids]
+    csv << [user.id, user.name, user.description, user.location, user.uri.to_s]
   end
 end
 

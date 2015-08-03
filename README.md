@@ -4,8 +4,8 @@ Script para obtener info de los followers de twitter de una cuenta.
 
 ## Instalación
 
-- Ruby 2.0
-- gemas: twitter y csv
+- Ruby 
+- gemas: twitter
 
 ## Configuración
 
